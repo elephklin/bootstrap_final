@@ -1,0 +1,30 @@
+// lg
+@media (max-width: 992px) {
+    .card_body_item, .card_body_price{
+        padding: 10px 15px;
+    }
+}
+
+// md
+@media (max-width: 768px) {
+
+    .reason{
+        background-color: transparent;
+        margin: 0;
+    }
+    .reason_text{      
+        writing-mode: horizontal-tb;
+        background-color: $major;
+    }
+    .reason_img_adjust{
+        margin: 0;
+    }
+}
+
+// sm
+@media (max-width: 576px) 
+{
+    .main_site{
+        margin-top: 0;
+    }
+}

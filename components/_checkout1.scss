@@ -1,0 +1,19 @@
+.form_title{
+    font-size: 36px;
+}
+
+.order_summary{
+    border: 1px solid $major;
+}
+.shopping_list{
+    border: 1px solid $major;
+    padding: 15px 15px 0 15px;
+}
+.shopping_list_img{
+    min-height: 80px;
+    background-size: cover;
+    background-position: center;
+}
+.shopping_list_price{
+    font-size: 20px;
+}

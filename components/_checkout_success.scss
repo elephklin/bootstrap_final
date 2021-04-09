@@ -1,0 +1,84 @@
+.board_success{
+    background-image: url(https://bit.ly/2P7GhNd);
+    min-height: 460px;
+    background-position: center;
+    background-size: cover;
+}
+
+
+//流程 Process Chart
+.process-chart{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        border-top: 1px solid $major;
+        z-index: 1;
+    }
+}
+  
+.process-circle{
+    width: 16px;
+    height: 16px;
+    border: 1px solid $major;
+    background-color: $minor;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    
+    &.process-current::after{
+        content: '';
+        width: 12px;
+        height: 12px;
+        background-color: $major;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+  
+    &.process-done{
+        background-color: $major;
+        &::after{
+            content:'\2713';
+            color: $minor;
+            font-weight: bold;
+            font-size: 12px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+}
+  
+.process-chart-dark{
+    &::before{
+        border-top: 1px solid $minor;
+    }
+  
+    .process-circle{
+        border: 1px solid $minor;
+        background-color: $minor;
+    }
+  
+    .process-done{
+        &::after{
+            color: $major;
+        }
+    }
+}
+
+
+.btn_size{
+    font-size: 24px !important;
+    padding: 15px 0 !important;
+}

@@ -1,0 +1,57 @@
+/* 圖片取代文字 */
+@mixin imgReplaceText() {
+    background-repeat: no-repeat;
+    text-indent: 110%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* 毛玻璃效果 */
+.glass_outer {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+
+    // hover 與 active 時效果相同
+    &:hover,
+    &.active {
+        text-decoration: none;
+        font-weight: bold;
+        color: $minor;
+
+        .glass_cover {
+            background-color: rgba($special,0.6);
+            // backdrop-filter: blur(0px); // 使背景(下層元素)模糊 -> 用起來圖片邊緣會有陰影
+        }
+        .glass_img {
+            filter: blur(0px); // 使元素本身模糊
+        }
+    }
+}
+
+.glass_text {
+    font-size: 24px;
+    letter-spacing: 10px;
+}
+
+.glass_cover {
+    z-index: -1;
+    background-color: rgba($minor, 0.6);
+    transition: background-color 0.5s;
+}
+
+.glass_img {
+    z-index: -2;
+    margin: -30px; // 讓圖片向外撐，減少 filter 邊界模糊不足的陰影。
+    filter: blur(5px);
+    transition: filter 0.5s;
+
+    background-position: center center;
+    background-size: cover;
+}
+
+.glass_full{
+    position: absolute;
+    left: 0px; right: 0px;
+    top: 0px; bottom: 0px;
+}

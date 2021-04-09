@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sweetaste</title>
+    <link rel="icon" href="img/logo.ico">
+
+
+    <meta name="author" content="Sweetaste">
+    <meta name="copyright" content="Sweetaste版權所有、轉載必究">
+    <meta name="keywords" content="Sweetaste,甜點">
+    <meta name="description" content="Sweetaste：想吃甜點是不需要理由的 !">
+
+    <meta property="og:title" content="Sweetaste">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/Thumbnail.png">
+    <meta property="og:description" content="Sweetaste：想吃甜點是不需要理由的 !">
+
+
+
+    <script src="https://kit.fontawesome.com/55c1711176.js"></script>
+
+
+    <link rel="stylesheet" href="css/all.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+                <a class="navbar-brand nav_logo" href="#">sweetaste</a>
+
+                <a class="text-minor cart_md_link" href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-minor" href="home.html">首頁</a>
+                        </li>
+                        <li class="nav-item pl-8">
+                            <a class="nav-link text-minor" href="product.html">甜點</a>
+                        </li>
+                        <li class="nav-item pl-8">
+                            <a class="nav-link text-minor" href="login.html">登入</a>
+                        </li>
+                        <li class="nav-item pl-11">
+                            <a class="nav-link text-minor cart_link" href="cart.html">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <section class="container">
+        <div class="row justify-content-center fill_bg">
+            <div class="col-md-6">
+                <form class="px-8 py-6 bg-minor">
+                    <div class="form-row d-flex align-items-center mb-6">
+                        <div class="col-6">
+                            <h2 class="form_title font-weight-bold text-major">付款</h2>
+                        </div>
+                        <div class="col-6">
+                            <div class="process-chart">
+                                <div class="process-circle process-done"></div>
+                                <div class="process-circle process-current"></div>
+                                <div class="process-circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group card_icon_site">
+                        <label class="h5 text-major" for="cardNum">信用卡卡號</label>
+                        <input type="number" class="rounded-0 border-0 form-control" id="cardNum"
+                            placeholder="9012-3456-7890-1234">
+                        <div class="far fa-credit-card card_icon"></div>
+                    </div>
+
+                    <label class="h5 text-major" for="name">持卡人姓名</label>
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <input type="text" class="rounded-0 border-0 form-control" id="name" placeholder="王">
+                        </div>
+                        <div class="form-group col-6">
+                            <input type="text" class="rounded-0 border-0 form-control" id="name" placeholder="小明">
+                        </div>
+                    </div>
+
+                    <label class="h5 text-major" for="date">有效期限</label>
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <select id="date" class="custom-select rounded-0 border-0 form-control">
+                                <option disabled>月
+                                </option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-6">
+                            <select id="date" class="custom-select rounded-0 border-0 form-control">
+                                <option disabled>年</option>
+                                <option>1991</option>
+                                <option>1992</option>
+                                <option>1993</option>
+                                <option>1994</option>
+                                <option>1995</option>
+                                <option>1996</option>
+                                <option>1997</option>
+                                <option>1998</option>
+                                <option>1999</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <label class="h5 text-major" for="lastThree">背面末三碼</label>
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <input type="number" class="rounded-0 border-0 form-control" id="lastThree"
+                                placeholder="123">
+                        </div>
+                    </div>
+
+                </form>
+                <button type="submit"
+                    class="btn btn-lg btn_size d-none d-md-block w-100 rounded-0 bg-special text-minor border-0 font-weight-bold hover_style">
+                    <a class="text-decoration-none" href="checkout3.html">下一步</a>
+                </button>
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+                <h2 class="text-center text-other bg-major py-4  mb-0">訂單摘要</h2>
+                <div class="order_summary text-other p-md-4">
+                    <div class="d-flex justify-content-between mb-3">
+                        <span>小計</span>
+                        <span>NT$ 2700</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <span>運費</span>
+                        <span>NT$ 300</span>
+                    </div>
+                    <div class="d-flex justify-content-between order_summary_total">
+                        <span>總計</span>
+                        <span>NT$ 3,000</span>
+                    </div>
+                </div>
+
+                <h2 class="text-center text-other bg-major mt-4 mb-0 py-4 ">購物清單</h2>
+                <div class="shopping_list mb-10">
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-md-6">
+                            <div style="background-image: url('https://bit.ly/2QvsT63')"
+                                class="shopping_list_img h-100"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="mb-0">焦糖馬卡龍 (2)</p>
+                            <strong class="shopping_list_price">NT$ 900</strong>
+                        </div>
+                    </div>
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-md-6">
+                            <div style="background-image: url('https://bit.ly/2zBDAxX')"
+                                class="shopping_list_img h-100"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="mb-0">焦糖馬卡龍 (2)</p>
+                            <strong class="shopping_list_price">NT$ 900</strong>
+                        </div>
+                    </div>
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-md-6">
+                            <div style="background-image: url('https://bit.ly/2zKOP7w')"
+                                class="shopping_list_img h-100"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="mb-0">焦糖馬卡龍 (2)</p>
+                            <strong class="shopping_list_price">NT$ 900</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button type="submit"
+        class="btn btn-lg btn_size d-block d-md-none w-100 rounded-0 bg-special text-minor border-0 font-weight-bold hover_style">
+        <a class="text-decoration-none" href="checkout3.html">下一步</a>
+    </button>
+
+    <footer>
+        <div class="subscribe bg-minor">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <div class="row align-items-center py-5 subscribe_md_site">
+                            <div class="col-md-6 subscribeTitle_md_site">
+                                <a class="navbar-brand" href="#">
+                                    <img src="img/logo-light.svg" height="40">
+                                </a>
+                                <label for="" class="col-form-label text-base">訂閱你我的甜蜜郵件</label>
+                            </div>
+
+                            <div class="col-md-6 col-7">
+                                <div class="input-group mail">
+
+                                    <div class="fas fa-envelope mail_icon"></div>
+
+                                    <input type="text" class="mail_input form-control rounded-0 border-0">
+
+                                    <div class="input-group-append">
+                                        <span class="input-group-text rounded-0 mail_sure">→</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact bg-major">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <div class="row justify-content-between pb-6 contact_md_site">
+                            <div class="col-md-4 col-8 contactItem_md_site">
+                                <a class="contact_logo d-block mt-8" href="#">
+                                    <img src="img/logotype-lg-dark.svg" height="27">
+                                </a>
+
+                                <ul class="contact_data mb-0">
+                                    <li class="contact_data_item">
+                                        <a class="contact_data_item_link" href="">07-1234-5678</a>
+                                    </li>
+
+                                    <li class="contact_data_item">
+                                        <a class="contact_data_item_link" href="">sweetaste@email.com</a>
+                                    </li>
+
+                                    <li class="contact_data_item">
+                                        <a class="contact_data_item_link" href="">800 高雄市新興區幸福路 520 號</a>
+                                    </li>
+                                </ul>
+
+                                <ul class="contact_social mt-6 mb-0">
+                                    <li class="social_item">
+                                        <a class="twitter social_item_link mr-2" href="#">
+                                            <img src="img/ic-line@.svg" height="32">
+                                        </a>
+                                    </li>
+
+                                    <li class="social_item">
+                                        <a class="facebook social_item_link" href="#">
+                                            <img src="img/ic-facebook.svg" height="32">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-5 col-8 contactDeclare_md_site">
+                                <a class="d-block text-right mt-8" href="#">
+                                    <img src="img/sm-今天是個吃甜點的好日子.svg" width="60" class="img_md_hide">
+                                </a>
+                                <p class="mt-6 mb-0 text-right copyright_md_site">
+                                    © 2018 Sweetaste* All Rights Reserved
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+.nav-tabs .nav-link{
+    background-color: $minor;
+    color: $major;
+    border: 1px solid $major;;
+}
+.nav-tabs .nav-link.active{
+    background-color: $major;
+    color: $minor;
+}

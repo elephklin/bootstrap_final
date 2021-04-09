@@ -1,0 +1,46 @@
+.nav_logo{
+    @include imgReplaceText();
+    background-image: url(../img/logo-all-dark.svg);
+    font-size: 40px;
+
+    //背景圖垂直置中
+    background-position-y: center;
+}
+.cart_md_link{
+    display: none;
+}
+.nav-link{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+
+/*.mail{
+    position: relative;
+}*/
+.mail_icon{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    //icon 沒有顯示，可增加權重
+    z-index: 30;
+}
+.mail_input{
+    background-color: $major;
+}
+.mail_sure{
+    background-color: $special;
+    border-width: 0px;
+    font-weight: bold;
+}
+
+
+
+.contact_logo{
+    margin-bottom: 115px;
+}
+.contact_social{
+    display: inline-flex;
+}

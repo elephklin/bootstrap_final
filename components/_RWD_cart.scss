@@ -1,0 +1,38 @@
+// lg
+@media (max-width: 992px) {
+    
+}
+
+// md
+@media (max-width: 768px) {
+    .order_border{
+        border-bottom: 0px;
+    }
+    .order_img{
+        width: 60%;
+    }
+    .order_price{
+        padding: 10px 0;
+        margin: 10px 0 30px 0;
+        border-top: 1px solid $major;
+        border-bottom: 1px solid $major;
+        font-size: 20px;
+    }
+    .order_summary{
+        background-color: $base !important;
+        color: $minor !important;
+        margin-bottom: 20px;
+    }
+    .order_summary_title{
+        border-bottom-width: 0;
+        color: $minor;
+        background-color: $major;
+        padding-top: 20px;
+    }
+}
+
+// sm
+@media (max-width: 576px) 
+{
+    
+}

@@ -1,0 +1,35 @@
+//board
+.board{
+    background-image: url(https://bit.ly/2Qodh3Z);
+    height: 496px;
+    background-position: center center;
+    background-size: cover;
+
+    position: relative;
+}
+.board_slogan{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+
+//sweety
+.list-group-item{
+    border-color: $major;
+}
+.list-group-item.active{
+    background-color: $major;
+    border-color: $major;
+}
+
+
+//pagination
+
+.page-link{
+    color: $minor;
+    border-color: $major;
+}
+.page-item.active .page-link{
+    background-color: $minor;
+}

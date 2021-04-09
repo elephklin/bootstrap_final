@@ -1,0 +1,17 @@
+ol, ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+}
+body, a{
+    color: $minor;
+    font-family: sans-serif,"Segoe UI", "Roboto", "Helvetica Neue", Arial, "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}

@@ -1,0 +1,74 @@
+// lg
+@media (max-width: 992px) 
+{
+    //header
+    .nav_logo{
+        background-image: url(../img/logotype-lg-dark.svg);
+        font-size: 40px;
+        margin: 0 auto;
+    }
+    .cart_md_link{
+        display: block;
+        font-size: 22px;
+    }
+    .nav-item{
+        padding-left: 0 !important;
+    }
+    .cart_link{
+        display: none;
+    }
+}
+
+// md
+@media (max-width: 768px) 
+{
+
+
+    //footer
+    .subscribe_md_site{
+        display: flex;
+        justify-content: center;
+    }
+    .subscribeTitle_md_site{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 20px;
+    }
+
+
+    .contact_md_site{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactItem_md_site{
+        //display: flex;
+        //flex-direction: column;
+        align-items: flex-start;
+    }
+    .contact_logo{
+        margin-bottom: 40px;
+    }
+
+    .contactDeclare_md_site{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .img_md_hide{
+        display: none;
+    }
+    .copyright_md_site{
+        margin-top: 0 !important;
+    }
+}
+
+// sm
+@media (max-width: 576px) 
+{
+    
+}
+

@@ -1,0 +1,26 @@
+.order_border{
+    border-bottom: 1px solid $major;
+}
+.order_img{
+    min-height: 110px;
+    min-width: 110px;
+    background-size: cover;
+    background-position: center;
+}
+
+.order_goods_size{
+    font-size: 20px;
+}
+
+
+.order_summary_title{
+    border-bottom: 1px solid $major;
+}
+.order_summary_total{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hover_style :hover{
+    color: green;
+}
